@@ -78,13 +78,16 @@ h1 {
         font-size: 12px; /* ボタンの文字サイズを調整 */
         margin-top: 0;
     }
-    
-   .photo, .photo1, .photo2 {
+    .photo, .photo1, .photo2 {
         order: 1;
         width: 100%;
         height: 90px; /* 高さを固定 */
-        max-height: 90px; /* 最大高さを設定 */
-        object-fit: contain; /* 画像がアスペクト比を維持しつつ、要素内に収まるように調整 */
+        max-height: 90px;
         border: 2px solid black;
+
+        /* 背景画像の場合の調整 */
+        background-size: contain; /* 画像が枠内に収まるように調整 */
+        background-repeat: no-repeat; /* 画像の繰り返しをしない */
+        background-position: center; /* 画像を中央に配置 */
     }
 }

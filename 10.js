@@ -54,7 +54,7 @@ function burger() {
 
     function randomphoto() {
         let array = Math.floor(Math.random() * photos.length);
-        photo.innerHTML = `<img src="${photos[array]}" width="300" height="300">`;
+        photo.innerHTML = `<img src="${photos[array]}"`;
     }
 
     let interval = setInterval(randomphoto, 100);
@@ -65,7 +65,7 @@ function burger() {
         btn.disabled = false;
     }, 4000);
     let array = Math.floor(Math.random() * photos.length);
-    photo.innerHTML = `<img src="${photos[array]}" width="300" height="300">`;
+    photo.innerHTML = `<img src="${photos[array]}"`;
 }
 function side() {
     const photo1 = document.getElementById("photo1");
@@ -73,7 +73,7 @@ function side() {
     btn1.disabled = true;
     function randomsidephoto() {
         let array = Math.floor(Math.random() * sidephotos.length);
-        photo1.innerHTML = `<img src="${sidephotos[array]}" width="300" height="300">`;
+        photo1.innerHTML = `<img src="${sidephotos[array]}"`;
     }
 
     let interval = setInterval(randomsidephoto, 100);
@@ -84,7 +84,7 @@ function side() {
         btn1.disabled = false;
     }, 4000);
     let array = Math.floor(Math.random() * sidephotos.length);
-    photo1.innerHTML = `<img src="${sidephotos[array]}" width="300" height="300">`;
+    photo1.innerHTML = `<img src="${sidephotos[array]}"`;
 }
 function drink() {
     const photo2 = document.getElementById("photo2");
@@ -92,7 +92,7 @@ function drink() {
     btn2.disabled = true;
     function randomdrinkphoto() {
         let array = Math.floor(Math.random() * drinkphotos.length);
-        photo2.innerHTML = `<img src="${drinkphotos[array]}" width="300" height="300">`;
+        photo2.innerHTML = `<img src="${drinkphotos[array]}"`;
     }
 
     let interval = setInterval(randomdrinkphoto, 100);
@@ -103,5 +103,5 @@ function drink() {
         btn2.disabled = false;
     }, 4000);
     let array = Math.floor(Math.random() * drinkphotos.length);
-    photo2.innerHTML = `<img src="${drinkphotos[array]}" width="300" height="300">`;
+    photo2.innerHTML = `<img src="${drinkphotos[array]}"`;
 }
