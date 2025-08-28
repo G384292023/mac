@@ -79,11 +79,12 @@ h1 {
         margin-top: 0;
     }
     
-    .photo, .photo1, .photo2 {
-        order: 1; /* 写真をボタンの上に配置 */
-        width: 100%; /* 親要素の幅に合わせる */
-        height: auto; /* 縦横比を維持 */
-        max-height: 90px; /* 写真の最大高さを調整 */
-        border: 2px solid black; /* 枠線を調整 */
+   .photo, .photo1, .photo2 {
+        order: 1;
+        width: 100%;
+        height: 90px; /* 高さを固定 */
+        max-height: 90px; /* 最大高さを設定 */
+        object-fit: contain; /* 画像がアスペクト比を維持しつつ、要素内に収まるように調整 */
+        border: 2px solid black;
     }
 }
